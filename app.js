@@ -33,11 +33,13 @@ function decrementPrice() {
   var currentPrice = priceOne.textContent;
   updatedPrice = currentPrice > 0 ? currentPrice - 1219 : currentPrice = 0;
   priceOne.textContent = updatedPrice;
+  totalAmount();
 }
 function decrementPriceTwo() {
   var currentPrice = priceTwo.textContent;
   updatedPrice = currentPrice > 0 ? currentPrice - 59 : currentPrice = 0;
   priceTwo.textContent = updatedPrice;
+  totalAmount();
 }
 decrementButtonOne.addEventListener("click", decrement);
 decrementButtonTwo.addEventListener("click", decrementTwo);
